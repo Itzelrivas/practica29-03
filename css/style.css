@@ -1,8 +1,16 @@
 .header {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 15% 17% 17% 17% 17% 17%;
+    grid-template-rows: 200px;
+    grid-template-areas: 
+    "logo ini proc promo con cit";
 }
 
-.header__logo img{
-    width: 25%;
-}
+.header__logo--img {grid-area: logo;}
+.nav__menu--inicio {grid-area: ini;}
+.nav__menu--procedimientos {grid-area: proc;}
+.nav__menu--promociones {grid-area: promo;}
+.nav__menu--contacto {grid-area: con;}
+.nav__menu--citas {grid-area: cit;}
+
+
